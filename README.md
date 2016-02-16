@@ -7,15 +7,16 @@ _"Gowalla is a location-based social networking website where users share their 
 
 ### SAMPLE
 
-[user]	[check-in time]		    [latitude]	    [longitude]	    [location id]
-196514  2010-07-24T13:45:06Z    53.3648119      -2.2723465833   145064
-196514  2010-07-24T13:44:58Z    53.360511233    -2.276369017    1275991
-196514  2010-07-24T13:44:46Z    53.3653895945   -2.2754087046   376497
-196514  2010-07-24T13:44:38Z    53.3663709833   -2.2700764333   98503
-196514  2010-07-24T13:44:26Z    53.3674087524   -2.2783813477   1043431
-196514  2010-07-24T13:44:08Z    53.3675663377   -2.278631763    881734
-196514  2010-07-24T13:43:18Z    53.3679640626   -2.2792943689   207763
-196514  2010-07-24T13:41:10Z    53.364905       -2.270824       1042822	
+| [user]  | [check-in time]		  | [latitude]	    | [longitude]	  | [location id]|
+| ------- |:---------------------:|:---------------:|:---------------:|:------------:|
+| 196514  | 2010-07-24T13:45:06Z  | 53.3648119      | -2.2723465833   |145064		 |
+| 196514  | 2010-07-24T13:44:58Z  | 53.360511233    | -2.276369017    |1275991		 |
+| 196514  | 2010-07-24T13:44:46Z  | 53.3653895945   | -2.2754087046   |376497		 |
+| 196514  | 2010-07-24T13:44:38Z  | 53.3663709833   | -2.2700764333   |98503		 |
+| 196514  | 2010-07-24T13:44:26Z  | 53.3674087524   | -2.2783813477   |1043431		 |
+| 196514  | 2010-07-24T13:44:08Z  | 53.3675663377   | -2.278631763    |881734		 |
+| 196514  | 2010-07-24T13:43:18Z  | 53.3679640626   | -2.2792943689   |207763		 |
+| 196514  | 2010-07-24T13:41:10Z  | 53.364905       | -2.270824       |1042822		 |
 
 ### TOOLS
 
@@ -34,3 +35,6 @@ I used Apache Spark with Scala. At first I tried MongoDB because Gowalla Dataset
 **2-)** At first we need to parse the dataset for getting the _"locationid"_ column, so we use regex _"\\t+"_ and get five columns. We can't use ~~take()~~ function here. Because if we use ~~take(4)~~, it takes the first four columns but we need only the "locationid" column. So we use **“line.split("\\t+")(4)”**, it takes the fourth element of line after split. The rest operations is same like by first question.
 
 **3-a)** already solved... solution explanation will be updated..
+
+### MONGODB SOLUTION
+If you want to learn how to do, check [my friend's repository](https://github.com/ozcaan11/mongodb-pymongo-bigdata).
