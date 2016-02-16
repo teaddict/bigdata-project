@@ -3,6 +3,7 @@
 ### DATASET
 
 We used [STANDFORD Snap Dataset](http://snap.stanford.edu/data/loc-gowalla.html) which you can download from [here](http://snap.stanford.edu/data/loc-gowalla_totalCheckins.txt.gz)
+
 _"Gowalla is a location-based social networking website where users share their locations by checking-in. The friendship network is undirected and was collected using their public API, and consists of 196,591 nodes and 950,327 edges. We have collected a total of 6,442,890 check-ins of these users over the period of Feb. 2009 - Oct. 2010."_
 
 ### SAMPLE
@@ -25,7 +26,9 @@ I used Apache Spark with Scala. At first I tried MongoDB because Gowalla Dataset
 ### PROBLEMS
 
 **1-) Who are the top 100 users checked-in on dataset?**
+
 **2-) What are the top 100 places checked-in on dataset?**
+
 **3-) Getting top users checked-in a place in which a user checked-in ?**
 
 ### ANSWERS
